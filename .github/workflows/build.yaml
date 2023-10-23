@@ -18,7 +18,7 @@ jobs:
       - name: Setup Java
         uses: actions/setup-Java@v3
         with:
-          Java-version: '19'
+          Java-version: '17'
           distribution: temurin
 
       - name: Build with Maven
