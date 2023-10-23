@@ -28,7 +28,7 @@ jobs:
         run:  mvn test
 
       - name: Report
-        uses: dorny/test-reporter@v1
+        uses: dorny/test-reporter@v1.7.0
         if: always()
         with:
           name: Maven Tests
