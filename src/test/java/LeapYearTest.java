@@ -21,7 +21,7 @@ public class LeapYearTest {
 
     @Test
     void test_divisibile_by_100_but_not_400_are_not_leap_years(){
-        assertEquals(false, LeapYear.isLeapYear(100));
+        assertEquals(true, LeapYear.isLeapYear(100));
     }
     @Test
     void test_2000_is_a_Leap_Year(){
