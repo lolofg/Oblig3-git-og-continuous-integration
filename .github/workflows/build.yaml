@@ -24,8 +24,14 @@ jobs:
       - name: Build with Maven
         run: mvn package
 
+      - name: List Files in target Directory
+        run: ls -R target
+
       - name: Run JUnit tests
         run:  mvn test
+
+      - name: List Test Report Files
+        run: ls -R target/surefire-reports
 
       - name: Report
         uses: dorny/test-reporter@v1.7.0
