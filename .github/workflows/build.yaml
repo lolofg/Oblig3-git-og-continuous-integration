@@ -20,6 +20,7 @@ jobs:
         with:
           Java-version: '17'
           distribution: temurin
+          cache: maven
 
       - name: Build with Maven
         run: mvn clean install
