@@ -27,9 +27,3 @@ jobs:
 
       - name: Run JUnit tests
         run:  mvn test
-
-      - name: Debug
-        run: |
-          echo "Working Directory: $(pwd)"
-          echo "Contents of src/test directory:"
-          ls -l src/test
